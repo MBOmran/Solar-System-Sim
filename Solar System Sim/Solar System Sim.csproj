@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65CB977A-9530-40BA-8AEF-6B16F57DC8FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Solar_System_Sim</RootNamespace>
+    <AssemblyName>Solar System Sim</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlphaBlendTextBox">
+      <HintPath>Resources\AlphaBlendTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2210.55, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2210.55\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2210.55, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2210.55\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2210.55, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2210.55\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EarthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthForm.Designer.cs">
+      <DependentUpon>EarthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JupiterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JupiterForm.Designer.cs">
+      <DependentUpon>JupiterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarsForm.Designer.cs">
+      <DependentUpon>MarsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MercuryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MercuryForm.Designer.cs">
+      <DependentUpon>MercuryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NeptuneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NeptuneForm.Designer.cs">
+      <DependentUpon>NeptuneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaturnForm.Designer.cs">
+      <DependentUpon>SaturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UranusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UranusForm.Designer.cs">
+      <DependentUpon>UranusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VenusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VenusForm.Designer.cs">
+      <DependentUpon>VenusForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EarthForm.resx">
+      <DependentUpon>EarthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JupiterForm.resx">
+      <DependentUpon>JupiterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarsForm.resx">
+      <DependentUpon>MarsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MercuryForm.resx">
+      <DependentUpon>MercuryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NeptuneForm.resx">
+      <DependentUpon>NeptuneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaturnForm.resx">
+      <DependentUpon>SaturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UranusForm.resx">
+      <DependentUpon>UranusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VenusForm.resx">
+      <DependentUpon>VenusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-no-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restore-window-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-universe-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-space-58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-xbox-menu-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-window-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimalism-space-stars-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth-background.jpg" />
+    <Content Include="Resources\Icon1.ico" />
+    <None Include="Resources\Uranus-Background.jpg" />
+    <None Include="Resources\Saturn-Background.png" />
+    <None Include="Resources\Jupiter-Background.jpg" />
+    <None Include="Resources\Mars-Background.jpg" />
+    <None Include="Resources\VenusBackground.jpg" />
+    <None Include="Resources\mercury-background.jpg" />
+    <None Include="Resources\icons8-neptune-planet-50.png" />
+    <None Include="Resources\icons8-uranus-planet-50.png" />
+    <None Include="Resources\icons8-saturn.png" />
+    <None Include="Resources\icons8-jupiter.png" />
+    <None Include="Resources\icons8-mercury.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\icons8-spaceship-24.png" />
+    <None Include="Resources\icons8-triangle-64.png" />
+    <None Include="Resources\icons8-earth-planet-48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2210.55\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2210.55\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2210.55\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2210.55\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>
